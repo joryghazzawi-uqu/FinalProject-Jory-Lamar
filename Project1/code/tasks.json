@@ -1,0 +1,13 @@
+[ {
+  "id" : "task-002",
+  "title" : "Coding session",
+  "dueDateTime" : "2026-04-29T00:55:21.7547021",
+  "weatherSensitive" : false,
+  "description" : "Complete the Smart Task Manager design."
+}, {
+  "id" : "task-001",
+  "title" : "Morning run",
+  "dueDateTime" : "2026-04-28T22:55:21.7547021",
+  "weatherSensitive" : true,
+  "description" : "Outdoor run if weather allows."
+} ]
