@@ -1,4 +1,4 @@
-package taskmanager.api;
+package taskmanager.model;
 
 import java.time.LocalDateTime;
 

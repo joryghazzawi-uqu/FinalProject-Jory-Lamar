@@ -1,5 +1,7 @@
-package taskmanager.api;
+package taskmanager.app;
 
+import taskmanager.api.TaskManager;
+import taskmanager.model.Task;
 import taskmanager.ui.swing.SmartTaskManagerFrame;
 
 import java.time.LocalDateTime;

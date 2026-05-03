@@ -1,7 +1,9 @@
 package taskmanager.api;
 
 import reactor.core.publisher.Mono;
-import taskmanager.impl.DefaultTaskManagerBuilder;
+import taskmanager.model.Task;
+import taskmanager.model.WeatherForecast;
+import taskmanager.service.DefaultTaskManagerBuilder;
 
 import java.util.List;
 
@@ -18,7 +20,7 @@ public interface TaskManager {
      * Adds a new task to the system.
      *
      * @param task the task to add
-     * @throws InvalidTaskException if the task is null or contains invalid data
+     * @throws taskmanager.exception.InvalidTaskException if the task is null or contains invalid data
      */
     void addTask(Task task);
 
@@ -26,8 +28,8 @@ public interface TaskManager {
      * Removes a task by its unique ID.
      *
      * @param taskId the ID of the task to remove
-     * @throws InvalidTaskException if the task ID is null or empty
-     * @throws TaskNotFoundException if no task exists with the given ID
+     * @throws taskmanager.exception.InvalidTaskException if the task ID is null or empty
+     * @throws taskmanager.exception.TaskNotFoundException if no task exists with the given ID
      */
     void removeTask(String taskId);
 
@@ -43,7 +45,7 @@ public interface TaskManager {
      *
      * @param location the city or location name
      * @return a Mono that emits the weather forecast
-     * @throws WeatherAPIException if the weather service fails
+     * @throws taskmanager.exception.WeatherAPIException if the weather service fails
      */
     Mono<WeatherForecast> fetchWeather(String location);
 

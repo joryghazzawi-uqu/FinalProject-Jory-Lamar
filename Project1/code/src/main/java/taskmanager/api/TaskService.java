@@ -2,6 +2,7 @@ package taskmanager.api;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import taskmanager.model.Task;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public interface TaskService {
      *
      * @param task the task to add or update
      * @return a Mono that completes when the task is saved
-     * @throws InvalidTaskException if the task data is invalid
+     * @throws taskmanager.exception.InvalidTaskException if the task data is invalid
      */
     Mono<Void> addTask(Task task);
 
@@ -27,8 +28,8 @@ public interface TaskService {
      *
      * @param taskId the task ID
      * @return a Mono that completes when the task is removed
-     * @throws InvalidTaskException if the task ID is invalid
-     * @throws TaskNotFoundException if the task does not exist
+     * @throws taskmanager.exception.InvalidTaskException if the task ID is invalid
+     * @throws taskmanager.exception.TaskNotFoundException if the task does not exist
      */
     Mono<Void> removeTask(String taskId);
 
@@ -37,7 +38,7 @@ public interface TaskService {
      *
      * @param taskId the task ID
      * @return a Mono emitting the task if found
-     * @throws TaskNotFoundException if the task does not exist
+     * @throws taskmanager.exception.TaskNotFoundException if the task does not exist
      */
     Mono<Task> findTaskById(String taskId);
 

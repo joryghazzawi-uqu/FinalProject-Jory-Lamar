@@ -1,4 +1,4 @@
-package taskmanager.api;
+package taskmanager.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,6 +1,9 @@
 package taskmanager.api;
 
 import reactor.core.publisher.Mono;
+import taskmanager.model.ScheduleRecommendation;
+import taskmanager.model.Task;
+import taskmanager.model.WeatherForecast;
 
 import java.util.List;
 
@@ -27,7 +30,7 @@ public interface SchedulePlanner {
      * @param tasks the tasks to analyze
      * @param location the location used to fetch weather data
      * @return a Mono emitting a list of schedule recommendations
-     * @throws WeatherAPIException if weather data cannot be fetched
+     * @throws taskmanager.exception.WeatherAPIException if weather data cannot be fetched
      */
     Mono<List<ScheduleRecommendation>> suggestScheduleForLocation(
             List<Task> tasks,

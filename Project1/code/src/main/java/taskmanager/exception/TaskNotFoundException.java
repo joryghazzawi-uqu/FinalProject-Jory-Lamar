@@ -1,4 +1,4 @@
-package taskmanager.api;
+package taskmanager.exception;
 
 /**
  * Exception thrown when a task cannot be found.
@@ -14,4 +14,3 @@ public class TaskNotFoundException extends RuntimeException {
         super("Task not found: " + taskId);
     }
 }
-

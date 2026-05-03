@@ -1,4 +1,4 @@
-package taskmanager.api;
+package taskmanager.model;
 
 /**
  * Represents a scheduling recommendation for a specific task.

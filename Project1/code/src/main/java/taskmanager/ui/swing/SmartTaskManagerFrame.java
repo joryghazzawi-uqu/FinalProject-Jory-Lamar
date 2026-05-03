@@ -3,10 +3,10 @@ package taskmanager.ui.swing;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 import taskmanager.api.SchedulePlanner;
-import taskmanager.api.ScheduleRecommendation;
-import taskmanager.api.Task;
 import taskmanager.api.TaskManager;
-import taskmanager.api.WeatherForecast;
+import taskmanager.model.ScheduleRecommendation;
+import taskmanager.model.Task;
+import taskmanager.model.WeatherForecast;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
