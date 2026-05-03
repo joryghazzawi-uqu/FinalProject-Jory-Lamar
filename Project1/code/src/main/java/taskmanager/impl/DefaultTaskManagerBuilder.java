@@ -1,8 +1,10 @@
-package taskmanager.service;
+package taskmanager.impl;
 
 import taskmanager.api.StorageService;
 import taskmanager.api.TaskManager;
 import taskmanager.api.WeatherService;
+import taskmanager.service.FileTaskStorageService;
+import taskmanager.service.OpenWeatherService;
 
 /**
  * Builder implementation for creating a configured TaskManager.

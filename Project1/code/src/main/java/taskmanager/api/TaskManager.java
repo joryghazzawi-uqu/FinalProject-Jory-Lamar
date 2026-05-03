@@ -1,9 +1,9 @@
 package taskmanager.api;
 
 import reactor.core.publisher.Mono;
+import taskmanager.impl.DefaultTaskManagerBuilder;
 import taskmanager.model.Task;
 import taskmanager.model.WeatherForecast;
-import taskmanager.service.DefaultTaskManagerBuilder;
 
 import java.util.List;
 
